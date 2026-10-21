@@ -1,9 +1,24 @@
-﻿@{
+@* ============================================================
+   Views/Home/Index.cshtml
+   Upgraded from ASP.NET Core 6.0 to .NET 10.
+   Key changes:
+     - Updated documentation link to .NET 10 docs URL
+     - Added Clean Architecture note in comment
+   ============================================================ *@
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome to OrbitAOS</h1>
+    <p>
+        Learn about
+        <a href="https://learn.microsoft.com/aspnet/core" target="_blank" rel="noopener noreferrer">
+            building Web apps with ASP.NET Core on .NET 10
+        </a>.
+    </p>
+    <p class="text-muted">
+        This application uses Clean Architecture with Domain, Application,
+        Infrastructure, and Web layers.
+    </p>
 </div>
-
